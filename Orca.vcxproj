@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Asset\Animation\AnimationClip.h" />
+    <ClInclude Include="Source\Asset\Animation\AnimationImporter.h" />
+    <ClInclude Include="Source\Asset\Animation\AnimationPlayer.h" />
+    <ClInclude Include="Source\Asset\Model\Model.h" />
+    <ClInclude Include="Source\Asset\Model\ModelImporter.h" />
+    <ClInclude Include="Source\Asset\Object\Object.h" />
+    <ClInclude Include="Source\Asset\Object\ObjectManager.h" />
+    <ClInclude Include="Source\Asset\Video\VideoEngine.h" />
+    <ClInclude Include="Source\Asset\Video\VideoSource.h" />
+    <ClInclude Include="Source\Asset\Image\ImageEngine.h" />
+    <ClInclude Include="Source\Asset\Image\ImageImporter.h" />
+    <ClInclude Include="Source\Asset\Image\ImageMetadata.h" />
+    <ClInclude Include="Source\Asset\Image\ImageSource.h" />
+    <ClInclude Include="Source\Asset\Audio\AudioEngine.h" />
+    <ClInclude Include="Source\Asset\Audio\AudioSource.h" />
+    <ClInclude Include="Source\Asset\Audio\AudioStream.h" />
+    <ClInclude Include="Source\Core\Engine.h" />
+    <ClInclude Include="Source\Core\InputState.h" />
+    <ClInclude Include="Source\Core\Logger.h" />
+    <ClInclude Include="Source\Core\Memory.h" />
+    <ClInclude Include="Source\Core\Timer.h" />
+    <ClInclude Include="Source\Core\Window.h" />
+    <ClInclude Include="Source\Events\Event.h" />
+    <ClInclude Include="Source\Events\EventDispatcher.h" />
+    <ClInclude Include="Source\Events\EventListener.h" />
+    <ClInclude Include="Source\Material\Material.h" />
+    <ClInclude Include="Source\Math\Bounds.h" />
+    <ClInclude Include="Source\Math\MathUtils.h" />
+    <ClInclude Include="Source\Math\Matrix4.h" />
+    <ClInclude Include="Source\Math\Quaternion.h" />
+    <ClInclude Include="Source\Math\Transform.h" />
+    <ClInclude Include="Source\Math\Vector2.h" />
+    <ClInclude Include="Source\Math\Vector3.h" />
+    <ClInclude Include="Source\OrcaAPI.h" />
+    <ClInclude Include="Source\Physics\AABB.h" />
+    <ClInclude Include="Source\Physics\CapsuleCollider.h" />
+    <ClInclude Include="Source\Physics\CircleCollider.h" />
+    <ClInclude Include="Source\Physics\MeshCollider.h" />
+    <ClInclude Include="Source\Physics\Physics.h" />
+    <ClInclude Include="Source\Physics\PhysicsWorld.h" />
+    <ClInclude Include="Source\Physics\SquareCollider.h" />
+    <ClInclude Include="Source\Platforms\OS.h" />
+    <ClInclude Include="Source\Renderer\Camera.h" />
+    <ClInclude Include="Source\Renderer\GLContext.h" />
+    <ClInclude Include="Source\Renderer\Mesh.h" />
+    <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Renderer\Shader.h" />
+    <ClInclude Include="Source\Renderer\ShaderRegistry.h" />
+    <ClInclude Include="Source\Renderer\Texture.h" />
+    <ClInclude Include="Source\Renderer\Vertex.h" />
+    <ClInclude Include="Source\Runtime\AnimationSystem.h" />
+    <ClInclude Include="Source\Runtime\CameraSystem.h" />
+    <ClInclude Include="Source\Runtime\ISystem.h" />
+    <ClInclude Include="Source\Runtime\PhysicsSystem.h" />
+    <ClInclude Include="Source\Runtime\RenderSystem.h" />
+    <ClInclude Include="Source\Runtime\RuntimeContext.h" />
+    <ClInclude Include="Source\Runtime\RuntimeLoop.h" />
+    <ClInclude Include="Source\Runtime\ScriptSystem.h" />
+    <ClInclude Include="Source\Runtime\SystemManager.h" />
+    <ClInclude Include="Source\Scene\AnimationComponent.h" />
+    <ClInclude Include="Source\Scene\CameraComponent.h" />
+    <ClInclude Include="Source\Scene\Component.h" />
+    <ClInclude Include="Source\Scene\Entity.h" />
+    <ClInclude Include="Source\Scene\EntityImpl.h" />
+    <ClInclude Include="Source\Scene\LightComponent.h" />
+    <ClInclude Include="Source\Scene\MeshComponent.h" />
+    <ClInclude Include="Source\Scene\RigidBodyComponent.h" />
+    <ClInclude Include="Source\Scene\Scene.h" />
+    <ClInclude Include="Source\Scene\SceneManager.h" />
+    <ClInclude Include="Source\Scene\SkeletonComponent.h" />
+    <ClInclude Include="Source\Scene\TransformComponent.h" />
+    <ClInclude Include="Source\Scripting\JNIUtils.h" />
+    <ClInclude Include="Source\Scripting\ScriptBehaviour.h" />
+    <ClInclude Include="Source\Scripting\ScriptBindings\JavaAPI.h" />
+    <ClInclude Include="Source\Scripting\ScriptComponent.h" />
+    <ClInclude Include="Source\Scripting\ScriptEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Asset\Animation\AnimaionClip.cpp" />
+    <ClCompile Include="Source\Asset\Animation\AnimationImporter.cpp" />
+    <ClCompile Include="Source\Asset\Animation\AnimationPlayer.cpp" />
+    <ClCompile Include="Source\Asset\Model\Model.cpp" />
+    <ClCompile Include="Source\Asset\Model\ModelImporter.cpp" />
+    <ClCompile Include="Source\Asset\Object\Object.cpp" />
+    <ClCompile Include="Source\Asset\Object\ObjectManager.cpp" />
+    <ClCompile Include="Source\Asset\Video\VideoEngine.cpp" />
+    <ClCompile Include="Source\Asset\Video\VideoSource.cpp" />
+    <ClCompile Include="Source\Asset\Image\ImageEngine.cpp" />
+    <ClCompile Include="Source\Asset\Image\ImageImporter.cpp" />
+    <ClCompile Include="Source\Asset\Image\ImageSource.cpp" />
+    <ClCompile Include="Source\Asset\Audio\AudioEngine.cpp" />
+    <ClCompile Include="Source\Asset\Audio\AudioSource.cpp" />
+    <ClCompile Include="Source\Core\Engine.cpp" />
+    <ClCompile Include="Source\Core\InputState.cpp" />
+    <ClCompile Include="Source\Core\Logger.cpp" />
+    <ClCompile Include="Source\Core\Timer.cpp" />
+    <ClCompile Include="Source\Core\Window.cpp" />
+    <ClCompile Include="Source\Events\Event.cpp" />
+    <ClCompile Include="Source\Events\EventDispatcher.cpp" />
+    <ClCompile Include="Source\Material\Material.cpp" />
+    <ClCompile Include="Source\Math\Bounds.cpp" />
+    <ClCompile Include="Source\Math\MathUtils.cpp" />
+    <ClCompile Include="Source\Math\Matrix4.cpp" />
+    <ClCompile Include="Source\Math\Quaternion.cpp" />
+    <ClCompile Include="Source\Math\Transform.cpp" />
+    <ClCompile Include="Source\Math\Vector2.cpp" />
+    <ClCompile Include="Source\Math\Vector3.cpp" />
+    <ClCompile Include="Source\Physics\AABB.cpp" />
+    <ClCompile Include="Source\Physics\CapsuleCollider.cpp" />
+    <ClCompile Include="Source\Physics\CircleCollider.cpp" />
+    <ClCompile Include="Source\Physics\MeshCollider.cpp" />
+    <ClCompile Include="Source\Physics\Physics.cpp" />
+    <ClCompile Include="Source\Physics\PhysicsWorld.cpp" />
+    <ClCompile Include="Source\Physics\SquareCollider.cpp" />
+    <ClCompile Include="Source\Platforms\OS.cpp" />
+    <ClCompile Include="Source\Renderer\Camera.cpp" />
+    <ClCompile Include="Source\Renderer\GLContext.cpp" />
+    <ClCompile Include="Source\Renderer\Mesh.cpp" />
+    <ClCompile Include="Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="Source\Renderer\Shader.cpp" />
+    <ClCompile Include="Source\Renderer\ShaderRegistry.cpp" />
+    <ClCompile Include="Source\Renderer\Texture.cpp" />
+    <ClCompile Include="Source\Runtime\AnimationSystem.cpp" />
+    <ClCompile Include="Source\Runtime\App.cpp" />
+    <ClCompile Include="Source\Runtime\CameraSystem.cpp" />
+    <ClCompile Include="Source\Runtime\PhysicsSystem.cpp" />
+    <ClCompile Include="Source\Runtime\RenderSystem.cpp" />
+    <ClCompile Include="Source\Runtime\RuntimeContext.cpp" />
+    <ClCompile Include="Source\Runtime\RuntimeLoop.cpp" />
+    <ClCompile Include="Source\Runtime\ScriptSystem.cpp" />
+    <ClCompile Include="Source\Runtime\SystemManager.cpp" />
+    <ClCompile Include="Source\Scene\AnimationComponent.cpp" />
+    <ClCompile Include="Source\Scene\CameraComponent.cpp" />
+    <ClCompile Include="Source\Scene\Component.cpp" />
+    <ClCompile Include="Source\Scene\Entity.cpp" />
+    <ClCompile Include="Source\Scene\LightComponent.cpp" />
+    <ClCompile Include="Source\Scene\MeshComponent.cpp" />
+    <ClCompile Include="Source\Scene\RigidBodyComponent.cpp" />
+    <ClCompile Include="Source\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Scene\SceneManager.cpp" />
+    <ClCompile Include="Source\Scene\SkeletonComponent.cpp" />
+    <ClCompile Include="Source\Scene\TransformComponent.cpp" />
+    <ClCompile Include="Source\Scripting\JNIUtils.cpp" />
+    <ClCompile Include="Source\Scripting\ScriptBehaviour.cpp" />
+    <ClCompile Include="Source\Scripting\ScriptBindings\JavaAPI.cpp" />
+    <ClCompile Include="Source\Scripting\ScriptComponent.cpp" />
+    <ClCompile Include="Source\Scripting\ScriptEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="Source\Runtime\Shaders\DefaultLit.frag" />
+    <None Include="Source\Runtime\Shaders\DefaultLit.vert" />
+    <None Include="Source\Runtime\Shaders\Unlit.frag" />
+    <None Include="Source\Runtime\Shaders\Unlit.vert" />
+    <None Include="Source\Scene\Entity.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{54456296-0b74-473e-90dd-8420560742a7}</ProjectGuid>
+    <RootNamespace>Orca</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\GLFW\include;C:\Program Files\OpenCV\opencv\build\include;C:\Users\Administrator\stb;C:\Users\Administrator\tinyobjloader;C:\Users\Administrator\tinygltf;C:\Users\Administrator\OneDrive\Documents\Projects\Orca\Source;C:\Users\Administrator\3D Objects\PyBullet 3.2.5 source code\bulletphysics-bullet3-2c204c4\src;C:\Program Files (x86)\OpenAL 1.1 SDK;C:\Program Files\GraalVM\graalvm-jdk-21.0.8+12.1\include\win32;C:\Program Files\GraalVM\graalvm-jdk-21.0.8+12.1\include;C:\Lua\lua-5.4.8\lib\include;C:\Qt\6.9.2\msvc2022_64\include;C:\Sol2;C:\GLEW\glew-2.1.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\GLFW\lib-vc2022;C:\Program Files\OpenCV\opencv\build\x64\vc16\lib;C:\Lua\lua-5.4.8\lib;C:\Users\Administrator\tinyobjloader\build\Release;C:\Users\Administrator\tinygltf\build\Release;C:\Program Files (x86)\OpenAL 1.1 SDK\libs\Win64;C:\Program Files\GraalVM\graalvm-jdk-21.0.8+12.1\lib;C:\Users\Administrator\3D Objects\PyBullet 3.2.5 source code\bulletphysics-bullet3-2c204c4\build3\lib\Release;C:\Qt\6.9.2\msvc2022_64\lib;C:\GLEW\glew-2.1.0\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <SourcePath>C:\Users\Administrator\OneDrive\Documents\Projects\Orca\Source;$(SourcePath)</SourcePath>
+    <IntDir>$(Platform)\$(Configuration)\$(IntDir)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;ORCA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;ORCA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;ORCA_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;ORCA_EXPORTS;_WINDOWS;_USRDLL;GLM_FORCE_CTOR_INIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>C:\Program Files\VulkanSDK\1.4.313.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>glfw3.lib;glew32.lib;opengl32.lib;jvm.lib;jawt.lib;opencv_world4120.lib;OpenAL32.lib;BulletCollision.lib;
+BulletDynamics.lib;
+LinearMath.lib;tinygltf.lib;tinyobjloader.lib;Qt6OpenGL.lib;Qt6OpenGLWidgets.lib;Qt6Core.lib;Qt6Widgets.lib;lua54.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>del /Q "$(OutDir)\*.obj"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
